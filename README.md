@@ -14,7 +14,6 @@ Requirements
 
 * Ipdb (http://github.com/akrito/ipdb)
 * Ropemacs (http://rope.sourceforge.net/ropemacs.html)
-* Ido (http://www.cua.dk/ido.el)
 
 Usage
 -----
