@@ -50,4 +50,4 @@ Todo
 * Stop breaking other comints.
 * Maybe use auto-complete.el instead of ido for rope completions.
 * Write up how to combine rope and virtualenv in .ropeproject/config.py.
-
+* IPython and virtualenv support can possibly be rewritten as a derived mode.
