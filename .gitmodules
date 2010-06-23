@@ -1,9 +1,0 @@
-[submodule "gist"]
-	path = gist
-	url = http://github.com/defunkt/gist.el.git
-[submodule "markdown-mode"]
-	path = markdown-mode
-	url = git://jblevins.org/git/markdown-mode.git
-[submodule "zen-and-art"]
-	path = zen-and-art
-	url = http://github.com/irfn/zen-and-art.git
