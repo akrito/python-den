@@ -68,7 +68,7 @@ in the current *Python* session."
              (insert completion)))))
 ;; FIXME This is too aggressive, and overrides <tab> in all comints
 (add-hook 'comint-mode-hook 
-          '(lambda () 
+          '(lambda ()
              (local-set-key (kbd "<tab>") 'ipython-complete)))
 
 ;; Pdb
@@ -119,7 +119,7 @@ buffer for a list of commands.)"
 	       (process-environment	; to import emacs.py
 		(cons (concat "PYTHONPATH="
 			      (if path (concat path ":"))
-			      python-den-py-dir)
+			      python-den-root-dir)
 		      process-environment))
                ;; IPython doesn't work with connection-type nil
 	       (process-connection-type t))
