@@ -66,10 +66,11 @@ in the current *Python* session."
                                         (all-completions pattern completion-table)))
              (delete-region beg end)
              (insert completion)))))
-;; FIXME This is too aggressive, and overrides <tab> in all comints
-(add-hook 'comint-mode-hook 
-          '(lambda ()
-             (local-set-key (kbd "<tab>") 'ipython-complete)))
+
+(defun comint-python-shell-hook ()
+  (if (boundp 'python-shell-map)
+      (define-key python-shell-map (kbd "<tab>") 'ipython-complete)))
+(add-hook 'comint-mode-hook 'comint-python-shell-hook)
 
 ;; Pdb
 (defun better-pdb ()
