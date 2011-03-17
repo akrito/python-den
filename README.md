@@ -50,9 +50,7 @@ In .emacs.d/init.el:
 Todo
 ----
 
-* Clean up all the sloppiness. I don't really know what the hell I'm doing.
 * Stop breaking other comints.
 * Maybe use auto-complete.el instead of ido for rope completions.
-* Write up how to combine rope and virtualenv in .ropeproject/config.py.
 * IPython and virtualenv support can possibly be rewritten as a derived mode.
 * (I)pdb should be smarter about default options
